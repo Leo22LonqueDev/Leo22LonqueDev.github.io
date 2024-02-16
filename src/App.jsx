@@ -2,6 +2,7 @@ import { Box, Button, Chip, Container, Divider, Paper, Typography } from "@mui/m
 import { grey } from "@mui/material/colors";
 import imgLeonardo from './imgs/imgLeonardo.png'
 import { FaHandPeace } from "react-icons/fa"
+import curriculoPDF from './pdfs/curriculo Leonardo de Arruda Lonque.pdf';
 
 const App = () => {
 
@@ -9,7 +10,7 @@ const App = () => {
     <>
       <Container maxWidth>
         <Box component={Paper} elevation={7} sx={{ display: 'flex', alignItems: 'center', justifyContent: 'space-around', borderRadius: '15px', padding: '15px' }}>
-          <Button href='' target='_blank' color='secondary' sx={{ fontSize: '50px' }}>CURRÍCULO</Button>
+          <Button href={curriculoPDF} target='_blank' color='secondary' sx={{ fontSize: '50px' }}>CURRÍCULO</Button>
           <Button href='https://www.linkedin.com/in/leonardodearrudalonque/' target='_blank' color='secondary' sx={{ fontSize: '50px' }}>LINKEDIN</Button>
           <Button href='https://www.instagram.com/leo_lonque/' target='_blank' color='secondary' sx={{ fontSize: '50px' }}>INSTAGRAM</Button>
           <Button href='https://github.com/Leo22LonqueDev' target='_blank' color='secondary' sx={{ fontSize: '50px' }}>GITHUB</Button>
